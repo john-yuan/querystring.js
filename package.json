@@ -1,0 +1,28 @@
+{
+  "name": "x-query-string",
+  "version": "1.0.0",
+  "description": "A query string encoder and decoder.",
+  "main": "lib/querystring.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "node scripts/dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/john-yuan/querystring.js.git"
+  },
+  "keywords": [
+    "querystring"
+  ],
+  "author": "JOHN YUAN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/john-yuan/querystring.js/issues"
+  },
+  "homepage": "https://github.com/john-yuan/querystring.js#readme",
+  "devDependencies": {
+    "@john-yuan/dev-browserify-watcher": "^1.0.5",
+    "@john-yuan/dev-server": "^1.0.4",
+    "mocha": "^5.2.0"
+  }
+}
