@@ -9,6 +9,11 @@ Features:
 * Encode & Decode array (nested)
 * Encode & Decode object (nested)
 
+## API
+
+* [QS.encode(object, [keepArrayIndex])](#qsencodeobject-keeparrayindex)
+* [QS.decode(string)](#qsdecodestring)
+
 ## Install
 
 ```bash
