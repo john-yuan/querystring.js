@@ -9,7 +9,7 @@ Features:
 * Encode & Decode array (nested)
 * Encode & Decode object (nested)
 
-## API
+API:
 
 * [QS.encode(object, [keepArrayIndex])](#qsencodeobject-keeparrayindex)
 * [QS.decode(string)](#qsdecodestring)
