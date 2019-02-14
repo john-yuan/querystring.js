@@ -84,3 +84,7 @@ result:
     "f": null
 }
 ```
+
+## License
+
+[MIT](./LICENSE "MIT")
