@@ -66,6 +66,8 @@ Decode the query string to a data object. The values in the result data object i
 var QS = require('x-query-string');
 
 QS.decode('a[]=1&a[]=2&b=false&c[d]=1&e=&f');
+// or (The query string below is url-encoded)
+QS.decode('a%5B%5D=1&a%5B%5D=2&b=false&c%5Bd%5D=1&e=&f');
 ```
 
 result:
