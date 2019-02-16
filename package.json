@@ -5,7 +5,8 @@
   "main": "lib/querystring.js",
   "scripts": {
     "test": "mocha",
-    "dev": "node scripts/dev.js"
+    "dev": "node scripts/dev.js",
+    "build": "node scripts/build.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/john-yuan/querystring.js#readme",
   "devDependencies": {
+    "@john-yuan/dev-browserify-builder": "^1.0.1",
     "@john-yuan/dev-browserify-watcher": "^1.0.5",
     "@john-yuan/dev-server": "^1.0.4",
     "mocha": "^5.2.0"

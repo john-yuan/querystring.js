@@ -8,7 +8,7 @@ exports.watch = function () {
         browserifyOptions: {
             debug: true,
             standalone: 'QS',
-            detectGlobals: 'false'
+            detectGlobals: false
         },
         chokidarOptions: {},
     });
