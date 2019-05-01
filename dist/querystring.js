@@ -64,7 +64,7 @@ var decodeKey = function (object, cache, key, value) {
     var dataArray;
     var length;
 
-    // check wether key is something like `person[name]` or `colors[]` or
+    // check whether key is something like `person[name]` or `colors[]` or
     // `colors[1]`
     if ( rBracket.test(key) ) {
         indexOrKeyOrEmpty = RegExp.$1;
@@ -119,7 +119,7 @@ var hasOwn = Object.prototype.hasOwnProperty;
  * Encode the given object to URI Component encoded query string
  *
  * @param {Object.<string, *>} object The object to encode
- * @param {boolean} [keepArrayIndex] Wether to keep array index
+ * @param {boolean} [keepArrayIndex] Whether to keep array index
  * @returns {string} Returns the URI Component encoded query string
  */
 var encode = function (object, keepArrayIndex) {
@@ -146,7 +146,7 @@ var encode = function (object, keepArrayIndex) {
  * @param {string} key The key name
  * @param {any} data The data of the key
  * @param {string[]} keyValueArray The array to store the key value string
- * @param {boolean} keepArrayIndex Wether to keep array index
+ * @param {boolean} keepArrayIndex Whether to keep array index
  */
 var encodeKey = function (key, data, keyValueArray, keepArrayIndex) {
     var prop;
@@ -213,7 +213,7 @@ exports.decode = decode;
 var toString = Object.prototype.toString;
 
 /**
- * Check wether the variable is an array
+ * Check whether the variable is an array
  *
  * @param {any} it The variable to check
  * @returns {boolean} Returns `true` if it is an array
@@ -223,7 +223,7 @@ var isArray = function (it) {
 };
 
 /**
- * Check wether the variable is an object
+ * Check whether the variable is an object
  *
  * @param {any} it The variable to check
  * @returns {boolean} Returns `true` if it is an object
