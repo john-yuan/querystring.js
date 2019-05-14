@@ -1,6 +1,9 @@
 # querystring.js
 
+[![npm version](https://img.shields.io/npm/v/x-query-string.svg)](https://www.npmjs.com/package/x-query-string)
 [![Build Status](https://travis-ci.org/john-yuan/querystring.js.svg?branch=master)](https://travis-ci.org/john-yuan/querystring.js)
+[![install size](https://packagephobia.now.sh/badge?p=x-query-string)](https://packagephobia.now.sh/result?p=x-query-string)
+[![npm downloads](https://img.shields.io/npm/dm/x-query-string.svg)](http://npm-stat.com/charts.html?package=x-query-string)
 
 A query string encoder and decoder. It works like the `$.param(...)` function of jQuery and has the ability to decode the query string. Can be used in Node.js and browser side.
 
