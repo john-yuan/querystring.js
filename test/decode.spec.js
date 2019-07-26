@@ -1,7 +1,12 @@
 var assert = require('assert');
-var decode = require('../lib/querystring').decode;
+var decode = require('../index').decode;
+var standaloneDecode = require('../decode');
 
 describe('decode', function () {
+    it('x-query-string/decode is available', function () {
+        assert.deepStrictEqual(standaloneDecode, decode);
+    });
+
     it('decode basic types', function () {
         var str = 'a=1&b=B&c=true&d=false';
         var result = decode(str);

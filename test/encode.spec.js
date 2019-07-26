@@ -1,7 +1,12 @@
 var assert = require('assert');
-var encode = require('../lib/querystring').encode;
+var encode = require('../index').encode;
+var standaloneEncode = require('../encode');
 
 describe('encode', function () {
+    it('x-query-string/encode is available', function () {
+        assert.deepStrictEqual(standaloneEncode, encode);
+    });
+
     it('encode basic types', function () {
         var expected = 'a=1&b=B&c=true&d=false';
         var data = {

@@ -1,7 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var assert = require('assert');
-var querystring = require('../lib/querystring');
+var querystring = require('../index');
 
 describe('version', function () {
     it('version is ' + querystring.version, function () {

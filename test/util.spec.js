@@ -1,5 +1,5 @@
 var assert = require('assert');
-var util = require('../lib/util');
+var util = require('../util/util');
 
 describe('util', function () {
     it('isArray', function () {

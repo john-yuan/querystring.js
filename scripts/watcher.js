@@ -2,13 +2,14 @@ var watcher = require('@john-yuan/dev-browserify-watcher');
 
 exports.watch = function () {
     watcher.watch({
-        entry: 'lib/querystring.js',
+        entry: 'index.js',
         output: 'dist/querystring.js',
-        paths: 'lib/**/*.js',
+        paths: ['util/**/*.js', 'index.js', 'encode.js', 'decode.js'],
         browserifyOptions: {
             debug: true,
             standalone: 'QS',
-            detectGlobals: false
+            detectGlobals: false,
+            plugin: [ 'bundle-collapser/plugin' ]
         },
         chokidarOptions: {},
     });

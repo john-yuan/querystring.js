@@ -19,9 +19,19 @@ API:
 
 ## Install
 
+If you are using npm, just install `x-query-string` as a dependency.
+
 ```bash
 npm i x-query-string
 ```
+
+Otherwise, you can import the bundle file with `script` tag directly.
+
+```html
+<script scr="path/to/querystring.min.js"></script>
+```
+
+The bundle file also can be used as an AMD module, which means it can be loaded by [require.js](https://requirejs.org/).
 
 ## Example
 
@@ -37,6 +47,22 @@ QS.encode({ a: [1, 2, 3] });
 // a%5Bb%5D%5Bc%5D=3 (a[b][c]=3)
 QS.encode({ a: { b: { c: 3 } } });
 ```
+
+For npm users, if you just want to include only the `encode` or `decode` function, you can do this as the following example.
+
+```js
+// include encode only
+var encode = require('x-query-string/encode');
+```
+
+Or
+
+```js
+// include decode only
+var decode = require('x-query-string/decode');
+```
+
+This is helpful when you want to reduce the bundle size of your application when you just use `encode` or `decode`.
 
 ## API
 

@@ -1,4 +1,4 @@
-var util = require('./util');
+var util = require('./util/util');
 var isArray = util.isArray;
 var isObject = util.isObject;
 var hasOwn = Object.prototype.hasOwnProperty;
@@ -10,7 +10,7 @@ var hasOwn = Object.prototype.hasOwnProperty;
  * @param {boolean} [keepArrayIndex] Whether to keep array index
  * @returns {string} Returns the URI Component encoded query string
  */
-var encode = function (object, keepArrayIndex) {
+function encode(object, keepArrayIndex) {
     var key;
     var keyValueArray = [];
 
@@ -25,8 +25,7 @@ var encode = function (object, keepArrayIndex) {
     }
 
     return keyValueArray.join('&');
-};
-
+}
 
 /**
  * Encode the speceifed key in the object
@@ -36,7 +35,7 @@ var encode = function (object, keepArrayIndex) {
  * @param {string[]} keyValueArray The array to store the key value string
  * @param {boolean} keepArrayIndex Whether to keep array index
  */
-var encodeKey = function (key, data, keyValueArray, keepArrayIndex) {
+function encodeKey(key, data, keyValueArray, keepArrayIndex) {
     var prop;
     var index;
     var length;
@@ -86,6 +85,6 @@ var encodeKey = function (key, data, keyValueArray, keepArrayIndex) {
 
         keyValueArray.push(value);
     }
-};
+}
 
-exports.encode = encode;
+module.exports = encode;

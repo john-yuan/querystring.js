@@ -1,4 +1,4 @@
-var util = require('./util');
+var util = require('./util/util');
 var isArray = util.isArray;
 
 /**
@@ -7,7 +7,7 @@ var isArray = util.isArray;
  * @param {string} The URI Component encoded query string
  * @returns {Object.<string, string>} Returns the decoded object
  */
-var decode = function (string) {
+function decode(string) {
     var object = {};
     var cache = {};
     var keyValueArray;
@@ -41,7 +41,7 @@ var decode = function (string) {
     }
 
     return object;
-};
+}
 
 /**
  * Decode the specefied key
@@ -51,7 +51,7 @@ var decode = function (string) {
  * @param {string} key The key name to decode
  * @param {any} value The value to decode
  */
-var decodeKey = function (object, cache, key, value) {
+function decodeKey(object, cache, key, value) {
     var rBracket = /\[([^\[]*?)?\]$/;
     var rIndex = /(^0$)|(^[1-9]\d*$)/;
     var indexOrKeyOrEmpty;
@@ -104,6 +104,6 @@ var decodeKey = function (object, cache, key, value) {
     } else {
         object[key] = value;
     }
-};
+}
 
-exports.decode = decode;
+module.exports = decode;
