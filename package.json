@@ -1,8 +1,9 @@
 {
   "name": "x-query-string",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A query string encoder and decoder. Can be used to encode arrays and objects.",
   "main": "index.js",
+  "types": "./index.d.ts",
   "scripts": {
     "test": "node scripts/build.js && mocha",
     "dev": "node scripts/dev.js",
